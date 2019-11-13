@@ -1,0 +1,34 @@
+extends ../layout/index
+block slider
+    .slider
+        h1 Rio de JAneiro
+        em aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae leo dolor. Sed faucibus viverra justo. Aenean feugiat mollis ligula id fermentum. Curabitur ut sapien vel urna dapibus maximus maximus nec erat. Maecenas pharetra erat nec lacinia viverra. Vivamus vestibulum ornare ullamcorper
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae leo dolor. Sed faucibus viverra justo. Aenean feugiat mollis ligula id fermentum. Curabitur ut sapien vel urna dapibus maximus maximus nec erat. Maecenas pharetra erat nec lacinia viverra. Vivamus vestibulum ornare ullamcorper
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", class="img-fluid")
+
+        h2.text-center.mb-5 Proximos viajes
+        include ../layout/partials/viajes
+       
+
+    
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de descuento
+                        p.titulo Viaje a canada
+                        p.fecha 20 de Marzo 2019 - 30 Marzo 2019
+                        p.precio $ 2500 USD
+
+    .container
+         h2.text-center.my-5 Testimoniales
+         include ../layout/partials/testimoniales
